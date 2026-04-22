@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshops — Creative Art Bhopal</title>
+  <meta name="description" content="Book pottery, painting, art therapy, kids and couples workshops at Creative Art Bhopal. Weekend sessions, beginner friendly." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="index.html"     onclick="closeMobile()">Home</a>
+  <a href="about.html"     onclick="closeMobile()">About</a>
+  <a href="workshops.html" onclick="closeMobile()">Workshops</a>
+  <a href="gallery.html"   onclick="closeMobile()">Gallery</a>
+  <a href="services.html"  onclick="closeMobile()">Services</a>
+  <a href="contact.html"   onclick="closeMobile()">Contact</a>
+  <a href="contact.html" class="btn btn-primary" onclick="closeMobile()" style="font-size:1rem;padding:0.8rem 2rem">Book Now</a>
+</nav>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Creative Art <span>Bhopal</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workshops.html" class="active">Workshops</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="background:linear-gradient(135deg,#3a2510,#6B5744)">
+  <div class="container">
+    <div class="page-hero-content reveal">
+      <span class="section-label" style="color:var(--terra-light)">Upcoming Sessions</span>
+      <h1 class="section-title" style="color:var(--cream-light);font-size:clamp(2.5rem,5vw,4.5rem)">Book Your<br><em>Workshop</em></h1>
+      <p style="color:rgba(247,242,234,0.7);font-size:1.05rem;max-width:520px;line-height:1.8">Browse our upcoming sessions and secure your spot. All skill levels welcome. Small groups, big experiences.</p>
+    </div>
+  </div>
+</div>
+
+<!-- WORKSHOPS GRID -->
+<section class="page-section" style="background:var(--cream-light)">
+  <div class="container">
+    <div class="workshops-grid" style="grid-template-columns:repeat(3,1fr)">
+
+      <div class="workshop-card reveal">
+        <div class="workshop-img">
+          <img src="images/pottery-workshop.png" alt="Beginner Pottery" loading="lazy" />
+          <span class="workshop-badge">Limited Seats</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Beginner Pottery Workshop</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 Every Saturday</span>
+            <span class="meta-item">⏱ 3 Hours</span>
+            <span class="meta-item">🎯 Beginner</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">Learn to centre clay from scratch. Shape your first bowl or cup with expert guidance. All materials included.</p>
+          <p class="seats-left">🔥 Only 4 seats left</p>
+          <a href="contact.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="workshop-card reveal reveal-delay-1">
+        <div class="workshop-img">
+          <img src="images/painting-session.png" alt="Texture Painting" loading="lazy" />
+          <span class="workshop-badge popular">Popular</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Texture Painting Masterclass</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 Every Sunday</span>
+            <span class="meta-item">⏱ 4 Hours</span>
+            <span class="meta-item">🎯 All Levels</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">Explore mixed-media and texture techniques on canvas. Take home a piece you're proud of.</p>
+          <p class="seats-left">🎨 6 seats available</p>
+          <a href="contact.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="workshop-card reveal reveal-delay-2">
+        <div class="workshop-img">
+          <img src="images/couples-session.png" alt="Couples Pottery Date" loading="lazy" />
+          <span class="workshop-badge weekend">Weekend Special</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Couples Pottery Date</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 Fri – Sun</span>
+            <span class="meta-item">⏱ 2.5 Hours</span>
+            <span class="meta-item">🎯 Fun & Easy</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">A romantic pottery experience for two. Create together, laugh together, take something home together.</p>
+          <p class="seats-left">💑 3 couple slots left</p>
+          <a href="contact.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="workshop-card reveal">
+        <div class="workshop-img">
+          <img src="images/kids-class.png" alt="Kids Art Saturday" loading="lazy" />
+          <span class="workshop-badge">Kids Only</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Kids Art Saturday</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 Every Saturday</span>
+            <span class="meta-item">⏱ 2 Hours</span>
+            <span class="meta-item">🎯 Ages 5–14</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">A safe, joyful space where children explore clay and watercolour under gentle guidance.</p>
+          <p class="seats-left">👧 8 seats available</p>
+          <a href="contact.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="workshop-card reveal reveal-delay-1">
+        <div class="workshop-img">
+          <img src="images/studio-interior.png" alt="Art Therapy" loading="lazy" />
+          <span class="workshop-badge popular">Healing</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Art Therapy Session</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 Weekdays</span>
+            <span class="meta-item">⏱ 90 Min</span>
+            <span class="meta-item">🎯 All Welcome</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">A structured, nurturing session using creative expression for emotional processing and calm.</p>
+          <p class="seats-left">🌿 Small group (6 max)</p>
+          <a href="contact.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="workshop-card reveal reveal-delay-2">
+        <div class="workshop-img">
+          <img src="images/gallery-pottery.png" alt="Wheel Throwing Intensive" loading="lazy" />
+          <span class="workshop-badge weekend">Weekend Special</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Wheel Throwing Intensive</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 Last Weekend</span>
+            <span class="meta-item">⏱ Full Day</span>
+            <span class="meta-item">🎯 Intermediate</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">A deep-dive full-day workshop on the wheel. Master cylinder forms, bowls, and trimming.</p>
+          <p class="seats-left">🔥 2 slots remaining</p>
+          <a href="contact.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <div class="workshop-card reveal">
+        <div class="workshop-img">
+          <img src="images/studio-interior.png" alt="Corporate Workshop" loading="lazy" />
+          <span class="workshop-badge" style="background:var(--olive)">Corporate</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Corporate Team Workshop</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 By Booking</span>
+            <span class="meta-item">⏱ Half/Full Day</span>
+            <span class="meta-item">🎯 All Teams</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">Team-building reimagined through art. Strengthen bonds, spark creativity, and create lasting memories.</p>
+          <p class="seats-left">🏢 Custom group sizing</p>
+          <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+        </div>
+      </div>
+
+      <div class="workshop-card reveal reveal-delay-1">
+        <div class="workshop-img">
+          <img src="images/artist.png" alt="Private Event" loading="lazy" />
+          <span class="workshop-badge" style="background:var(--clay)">Private</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Private Event Booking</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 Flexible</span>
+            <span class="meta-item">⏱ Custom</span>
+            <span class="meta-item">🎯 Your Group</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">Birthdays, bachelorettes, anniversaries — we design a fully personalised art experience for your occasion.</p>
+          <p class="seats-left">🎉 Fully customised</p>
+          <a href="contact.html" class="btn btn-primary">Book Private Event</a>
+        </div>
+      </div>
+
+      <div class="workshop-card reveal reveal-delay-2">
+        <div class="workshop-img">
+          <img src="images/painting-session.png" alt="Monthly Course" loading="lazy" />
+          <span class="workshop-badge popular">Best Value</span>
+        </div>
+        <div class="workshop-body">
+          <h3>Monthly Art Course</h3>
+          <div class="workshop-meta">
+            <span class="meta-item">📅 Monthly</span>
+            <span class="meta-item">⏱ 8 Sessions</span>
+            <span class="meta-item">🎯 All Levels</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--text-soft);line-height:1.7;margin-bottom:1rem">Commit to your craft — structured monthly courses in pottery, painting, or a combined programme.</p>
+          <p class="seats-left">📅 Next batch starting soon</p>
+          <a href="contact.html" class="btn btn-primary">Enrol Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="page-section" style="background:var(--beige)">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="reveal">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Everything<br>You Need to<br><em>Know</em></h2>
+        <p style="color:var(--text-soft);font-size:0.95rem;line-height:1.8;margin-top:1rem">Still have questions? We're always happy to chat. Reach out on WhatsApp or drop us a message.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:1.5rem">Ask Us Anything</a>
+      </div>
+      <div class="faq-list reveal reveal-delay-2">
+        <div class="faq-item" id="faq1">
+          <button class="faq-question" onclick="toggleFaq('faq1')" aria-expanded="false">Do I need any prior experience to join?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Absolutely not. All our workshops are designed to welcome complete beginners. Our mentors guide you step by step, and we believe there's no wrong way to be creative.</p></div>
+        </div>
+        <div class="faq-item" id="faq2">
+          <button class="faq-question" onclick="toggleFaq('faq2')" aria-expanded="false">How do I book a workshop?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Fill in our contact form, message us on WhatsApp, or call us directly. We confirm your booking within a few hours and send all the details you need.</p></div>
+        </div>
+        <div class="faq-item" id="faq3">
+          <button class="faq-question" onclick="toggleFaq('faq3')" aria-expanded="false">How long does a typical session last?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Sessions range from 90 minutes for art therapy to a full day for our intensive workshops. Most beginner sessions are 2–4 hours.</p></div>
+        </div>
+        <div class="faq-item" id="faq4">
+          <button class="faq-question" onclick="toggleFaq('faq4')" aria-expanded="false">Can I book a private event or corporate session?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes! We love doing private events — birthdays, bachelorettes, anniversaries, and corporate team-building. Just get in touch and we'll design a fully customised experience.</p></div>
+        </div>
+        <div class="faq-item" id="faq5">
+          <button class="faq-question" onclick="toggleFaq('faq5')" aria-expanded="false">What should I wear / bring to a session?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Wear clothes you don't mind getting clay or paint on. We provide all materials, tools, and aprons. Just bring yourself and an open mind!</p></div>
+        </div>
+        <div class="faq-item" id="faq6">
+          <button class="faq-question" onclick="toggleFaq('faq6')" aria-expanded="false">What is the cancellation policy?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Cancellations made 48 hours in advance receive a full refund or reschedule. Within 48 hours, we offer a credit note for a future session.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Creative Art <span>Bhopal</span></a>
+        <p class="footer-about">A premium pottery and art studio in the heart of Bhopal. We offer workshops, art therapy, and creative experiences that transform, heal, and inspire.</p>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon">📸</a>
+          <a href="https://facebook.com"  target="_blank" rel="noopener" class="social-icon">👥</a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="social-icon">💬</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Pottery Workshops</a></li><li><a href="services.html">Wheel Throwing</a></li><li><a href="services.html">Texture Painting</a></li><li><a href="services.html">Art Therapy</a></li><li><a href="services.html">Kids Classes</a></li><li><a href="services.html">Corporate Events</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="footer-contact-list"><div class="footer-contact-item">📍 Bhopal, Madhya Pradesh</div><div class="footer-contact-item">📞 +91 98765 43210</div><div class="footer-contact-item">✉️ hello@creativeartbhopal.com</div><div class="footer-contact-item">🕐 Mon–Sat: 10 AM – 7 PM</div></div></div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-tagline">Crafting creativity with soul.</span>
+      <span class="footer-legal">© 2025 Creative Art Bhopal. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <span>Ready to create something beautiful?</span>
+  <a href="contact.html" class="btn btn-primary">Book Now</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

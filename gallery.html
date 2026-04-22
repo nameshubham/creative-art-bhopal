@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Creative Art Bhopal</title>
+  <meta name="description" content="Browse the gallery of pottery, paintings, events and studio shots from Creative Art Bhopal." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <img id="lightboxImg" src="" alt="Gallery preview" />
+</div>
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="index.html"     onclick="closeMobile()">Home</a>
+  <a href="about.html"     onclick="closeMobile()">About</a>
+  <a href="workshops.html" onclick="closeMobile()">Workshops</a>
+  <a href="gallery.html"   onclick="closeMobile()">Gallery</a>
+  <a href="services.html"  onclick="closeMobile()">Services</a>
+  <a href="contact.html"   onclick="closeMobile()">Contact</a>
+  <a href="contact.html" class="btn btn-primary" onclick="closeMobile()" style="font-size:1rem;padding:0.8rem 2rem">Book Now</a>
+</nav>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Creative Art <span>Bhopal</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO (dark gallery style) -->
+<div style="background:var(--charcoal);padding:8rem 0 4rem">
+  <div class="container">
+    <div class="page-hero-content reveal" style="text-align:center">
+      <span class="section-label" style="color:var(--terra-light)">Our Work</span>
+      <h1 class="section-title" style="color:var(--cream-light);font-size:clamp(2.5rem,5vw,4.5rem);margin:0 auto">A Studio Full of<br><em>Beautiful Things</em></h1>
+      <p style="color:rgba(247,242,234,0.65);font-size:1.05rem;max-width:520px;line-height:1.8;margin:1rem auto 0">Every piece tells a story. Every session leaves something behind — in the clay, on the canvas, and in the heart.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY SECTION -->
+<section style="background:var(--charcoal);padding:0 0 5rem">
+  <div class="container">
+    <!-- Filters -->
+    <div class="gallery-filters reveal" style="margin-bottom:2.5rem">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pottery">Pottery</button>
+      <button class="filter-btn" data-filter="painting">Painting</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+      <button class="filter-btn" data-filter="studio">Studio</button>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="gallery-grid reveal">
+      <div class="gallery-item" data-cat="pottery" onclick="openLightbox('images/gallery-pottery.png','Pottery Collection')">
+        <img src="images/gallery-pottery.png" alt="Handmade pottery collection" loading="lazy" />
+        <div class="gallery-overlay"><span>Pottery Collection</span></div>
+      </div>
+      <div class="gallery-item" data-cat="pottery" onclick="openLightbox('images/pottery-workshop.png','Wheel Throwing')">
+        <img src="images/pottery-workshop.png" alt="Wheel throwing" loading="lazy" />
+        <div class="gallery-overlay"><span>Wheel Throwing Session</span></div>
+      </div>
+      <div class="gallery-item" data-cat="painting" onclick="openLightbox('images/painting-session.png','Texture Painting')">
+        <img src="images/painting-session.png" alt="Texture painting" loading="lazy" />
+        <div class="gallery-overlay"><span>Texture Painting</span></div>
+      </div>
+      <div class="gallery-item" data-cat="studio" onclick="openLightbox('images/studio-interior.png','Studio Interior')">
+        <img src="images/studio-interior.png" alt="Our studio" loading="lazy" />
+        <div class="gallery-overlay"><span>Our Studio</span></div>
+      </div>
+      <div class="gallery-item" data-cat="events" onclick="openLightbox('images/kids-class.png','Kids Art Class')">
+        <img src="images/kids-class.png" alt="Kids art class" loading="lazy" />
+        <div class="gallery-overlay"><span>Kids Saturday Class</span></div>
+      </div>
+      <div class="gallery-item" data-cat="events" onclick="openLightbox('images/couples-session.png','Couples Pottery Date')">
+        <img src="images/couples-session.png" alt="Couples pottery" loading="lazy" />
+        <div class="gallery-overlay"><span>Couples Pottery Date</span></div>
+      </div>
+      <div class="gallery-item" data-cat="pottery" onclick="openLightbox('images/artist.png','The Artist at Work')">
+        <img src="images/artist.png" alt="Artist at work" loading="lazy" />
+        <div class="gallery-overlay"><span>The Artist at Work</span></div>
+      </div>
+      <div class="gallery-item" data-cat="studio" onclick="openLightbox('images/gallery-pottery.png','Pottery Display')">
+        <img src="images/gallery-pottery.png" alt="Pottery display" loading="lazy" />
+        <div class="gallery-overlay"><span>Studio Display</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div style="background:var(--terracotta);padding:4rem 0;text-align:center">
+  <div class="container">
+    <div class="reveal">
+      <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.8rem);color:var(--cream-light);font-weight:300;margin-bottom:1rem">Ready to Create Your Own <em>Masterpiece?</em></h2>
+      <p style="color:rgba(247,242,234,0.8);font-size:1rem;margin-bottom:2rem">Book a workshop and add your story to our gallery.</p>
+      <a href="contact.html" class="btn" style="background:var(--cream-light);color:var(--terracotta);font-weight:600;">Book a Workshop →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Creative Art <span>Bhopal</span></a>
+        <p class="footer-about">A premium pottery and art studio in the heart of Bhopal. We offer workshops, art therapy, and creative experiences that transform, heal, and inspire.</p>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon">📸</a>
+          <a href="https://facebook.com"  target="_blank" rel="noopener" class="social-icon">👥</a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="social-icon">💬</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="workshops.html">Workshops</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Pottery Workshops</a></li><li><a href="services.html">Wheel Throwing</a></li><li><a href="services.html">Texture Painting</a></li><li><a href="services.html">Art Therapy</a></li><li><a href="services.html">Kids Classes</a></li><li><a href="services.html">Corporate Events</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="footer-contact-list"><div class="footer-contact-item">📍 Bhopal, Madhya Pradesh</div><div class="footer-contact-item">📞 +91 98765 43210</div><div class="footer-contact-item">✉️ hello@creativeartbhopal.com</div><div class="footer-contact-item">🕐 Mon–Sat: 10 AM – 7 PM</div></div></div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-tagline">Crafting creativity with soul.</span>
+      <span class="footer-legal">© 2025 Creative Art Bhopal. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <span>Ready to create something beautiful?</span>
+  <a href="contact.html" class="btn btn-primary">Book Now</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
